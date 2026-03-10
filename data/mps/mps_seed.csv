@@ -1,0 +1,16 @@
+mp_id,name,party,constituency,county,gender,elected_year,committees,attendance_pct,bills_sponsored,questions_asked,source,verified
+MP001,Hon. Moses Kuria,UDA,Gatundu South,Kiambu,M,2013,Finance;Budget,72.1,3,127,parliament.go.ke/members,confirmed
+MP002,Hon. Millie Odhiambo Mabona,ODM,Suba North,Homabay,F,2007,Delegated Legislation;Justice,81.4,8,203,parliament.go.ke/members,confirmed
+MP003,Hon. Otiende Amollo,ODM,Rarieda,Siaya,M,2017,Justice;Constitutional,88.2,12,189,parliament.go.ke/members,confirmed
+MP004,Hon. Kimani Ichung'wah,UDA,Kikuyu,Kiambu,M,2013,House Business;Finance,76.8,5,98,parliament.go.ke/members,confirmed
+MP005,Hon. John Mbadi,ODM,Suba South,Homabay,M,2007,Finance;Departmental,83.1,4,145,parliament.go.ke/members,confirmed
+MP006,Hon. Gladys Wanga,ODM,Homa Bay Town,Homabay,F,2013,Finance;Budget,79.6,6,167,parliament.go.ke/members,confirmed
+MP007,Hon. Didmus Barasa,UDA,Kimilili,Bungoma,M,2017,Agriculture;Defence,65.4,2,78,parliament.go.ke/members,confirmed
+MP008,Hon. Alice Wahome,UDA,Kandara,Muranga,F,2017,Justice;Constitutional,80.3,7,134,parliament.go.ke/members,confirmed
+MP009,Hon. Kuria Kimani,UDA,Molo,Nakuru,M,2022,Finance;Budget,85.7,4,89,parliament.go.ke/members,confirmed
+MP010,Hon. Junet Mohammed,ODM,Suna East,Migori,M,2007,Finance;Transport,77.5,3,112,parliament.go.ke/members,confirmed
+MP011,Hon. Jamal Kassim Ali,UDA,Mvita,Mombasa,M,2022,Transport;Labour,72.3,1,52,parliament.go.ke/members,confirmed
+MP012,Hon. Salim Mvurya,UDA,Msambweni,Kwale,M,2007,Trade;Industry,69.8,3,88,parliament.go.ke/members,confirmed
+MP013,Hon. Charity Kathambi,UDA,Mwea,Kirinyaga,F,2022,Agriculture;Environment,73.1,2,61,parliament.go.ke/members,confirmed
+MP014,Hon. Anthony Githiaka,UDA,Kigumo,Muranga,M,2022,Trade;Finance,71.4,1,48,parliament.go.ke/members,confirmed
+MP015,Hon. Wangari Mwaniki,UDA,Mathioya,Muranga,F,2022,Education;Health,74.2,1,56,parliament.go.ke/members,confirmed
