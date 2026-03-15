@@ -100,9 +100,10 @@ st.markdown("""
 
 st.markdown("""
 <div class="data-note">
-📋 <strong>Seed dataset:</strong> 15 MPs and 10 bills from public parliament.go.ke records
-and NG-CDF Annual Reports. All subjects are elected public officials acting in their
-official capacity. <strong>Data is factual and sourced.</strong>
+📋 <strong>Seed dataset:</strong> 15 of 350 MPs (4.3%), 10 bills, 14 of 290 constituencies (4.8%).<br>
+This is a <strong>demonstration of what full civic coverage would look like</strong> — not a complete
+parliamentary accountability tool. Data is from public parliament.go.ke records and NG-CDF Annual Reports.
+<strong>Do not draw conclusions about MPs not in this dataset.</strong>
 Community contributions expand coverage — use the Contribute tab.
 </div>
 """, unsafe_allow_html=True)
