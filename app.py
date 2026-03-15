@@ -93,7 +93,7 @@ cdf   = load_cdf()
 # ── Header ────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="cd-header">
-  <h1>🏛️ Civic Decoder Kenya</h1>
+  <h1>🏛️ Macho ya Wananchi — Civic Decoder Kenya</h1>
   <p>MP performance · Bill tracker · CDF watchdog — 13th Parliament (2022–2027)</p>
 </div>
 """, unsafe_allow_html=True)
@@ -360,7 +360,7 @@ unverified personal data about private individuals.
 # ── Footer ────────────────────────────────────────────────────────────────────
 st.divider()
 st.caption(
-    "Civic Decoder Kenya · Data: parliament.go.ke, NG-CDF Annual Reports, Kenya Gazette · "
+    "Macho ya Wananchi · Civic Decoder Kenya · Data: parliament.go.ke, NG-CDF Annual Reports, Kenya Gazette · "
     "CC BY-NC-ND 4.0 · contact@aikungfu.dev · "
     "Not affiliated with Parliament of Kenya or NG-CDF Board"
 )
