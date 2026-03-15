@@ -161,9 +161,11 @@ with tab_mp:
                 st.markdown(f"**First elected:** {int(mp['elected_year'])} · **Gender:** {'♀' if mp['gender']=='F' else '♂'}")
 
                 # CDF data for this MP
-                mp_cdf = cdf[cdf["mp_name"].str.contains(
-                    mp["name"].replace("Hon. ",""), case=False, na=False
-                )]
+                # Match on first two name tokens to handle surname variants
+                # (e.g. "Millie Odhiambo Mabona" → search "Millie Odhiambo")
+                _name_tokens = mp["name"].replace("Hon. ", "").split()
+                _name_key = " ".join(_name_tokens[:2]) if len(_name_tokens) >= 2 else " ".join(_name_tokens)
+                mp_cdf = cdf[cdf["mp_name"].str.contains(_name_key, case=False, na=False)]
                 if not mp_cdf.empty:
                     row = mp_cdf.iloc[0]
                     st.markdown(f"""
