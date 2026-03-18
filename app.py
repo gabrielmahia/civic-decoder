@@ -345,6 +345,19 @@ with tab_cdf:
     )
     st.caption("⚠️ Seed data — 14 constituencies. Full 290-constituency dataset requires NG-CDF API integration.")
 
+    # Live COB signal — county fiscal compliance directly affects CDF disbursements
+    _cob_cdf = fetch_cob_updates()
+    if _cob_cdf:
+        with st.expander(f"📡 Latest from Controller of Budget — county fiscal compliance ({len(_cob_cdf)} recent)", expanded=False):
+            st.caption("COB monitors county budgets including NG-CDF absorption — low absorption counties may face disbursement delays")
+            for _cc in _cob_cdf[:3]:
+                st.markdown(
+                    f"**[{_cc['title'][:80]}{'…' if len(_cc['title'])>80 else ''}]({_cc['link']})**  "
+                    f"*{_cc['date']}*"
+                )
+                if _cc.get("summary"):
+                    st.caption(_cc["summary"][:120] + "…")
+
 # ═══════════════════════════════════════════════════════════
 # TAB 4: CONTRIBUTE
 # ═══════════════════════════════════════════════════════════
