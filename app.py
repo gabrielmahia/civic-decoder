@@ -21,6 +21,32 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from pathlib import Path
+import urllib.request
+import xml.etree.ElementTree as ET
+
+@st.cache_data(ttl=3600)
+def fetch_cob_updates():
+    """Pull latest Controller of Budget publications."""
+    try:
+        req = urllib.request.Request(
+            "https://cob.go.ke/feed/",
+            headers={"User-Agent": "civic-decoder/1.0"},
+        )
+        with urllib.request.urlopen(req, timeout=8) as r:
+            root = ET.fromstring(r.read())
+        items = []
+        import re
+        for item in root.findall(".//item")[:4]:
+            title = item.findtext("title", "").strip()
+            link  = item.findtext("link", "").strip()
+            date  = item.findtext("pubDate", "").strip()[:16]
+            desc  = re.sub(r"<[^>]+>", "", item.findtext("description", "")).strip()[:140]
+            if title:
+                items.append({"title": title, "link": link, "date": date, "summary": desc})
+        return items
+    except Exception:
+        return []
+
 
 st.set_page_config(
     page_title="Hakiki — Civic Intelligence Kenya",
@@ -352,6 +378,18 @@ unverified personal data about private individuals.
                 st.error("Please describe your contribution before submitting.")
 
     st.divider()
+    # Live COB signal
+    cob_items = fetch_cob_updates()
+    if cob_items:
+        st.divider()
+        st.markdown("#### 📡 Latest from Controller of Budget — live")
+        st.caption("Pulled from cob.go.ke · refreshed hourly")
+        for item in cob_items:
+            st.markdown(
+                f"**[{item['title'][:80]}{'…' if len(item['title'])>80 else ''}]({item['link']})**  "
+                f"*{item['date']}*"
+            )
+
     st.markdown("""
 **Want to go deeper?** The full parliament.go.ke dataset can be downloaded at:
 - [National Assembly Hansard](https://parliament.go.ke/the-national-assembly/house-business/hansard)
