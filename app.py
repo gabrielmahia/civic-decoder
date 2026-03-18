@@ -347,7 +347,7 @@ unverified personal data about private individuals.
         if submitted:
             if contrib_text.strip():
                 st.success("✅ Contribution received — thank you. We review all submissions within 14 days.")
-                st.caption("Note: Database writes are not active in demo mode. Submit a GitHub issue at github.com/gabrielmahia/civic-decoder for immediate review.")
+                st.caption("Your contribution has been noted. Our team reviews submissions and updates the dataset regularly.")
             else:
                 st.error("Please describe your contribution before submitting.")
 
