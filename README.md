@@ -4,6 +4,7 @@ Kenya legislative and civic intelligence — MP voting records, CDF spending,
 bill tracking for the 13th Parliament (2022–2027).
 
 [![Live App](https://img.shields.io/badge/Live%20App-civic--decoder.streamlit.app-FF4B4B?logo=streamlit)](https://civic-decoder.streamlit.app)
+[![Live Data](https://img.shields.io/badge/Live%20Data-COB%20RSS-00b4d8)](#civic-decoder)
 [![CI](https://github.com/gabrielmahia/civic-decoder/actions/workflows/ci.yml/badge.svg)](https://github.com/gabrielmahia/civic-decoder/actions)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey)](LICENSE)
 
