@@ -109,6 +109,24 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; }
     [data-theme="dark"] [data-testid="stMetricDelta"],
     .stApp[data-theme="dark"] [data-testid="stMetricDelta"] { color: #cccccc !important; }
 
+
+    @media (prefers-color-scheme: dark) {
+        .badge-confirmed { background: #1a3d24 !important; color: #7dcea0 !important; }
+        .badge-est       { background: #3d3010 !important; color: #f0c060 !important; }
+        .badge-seed      { background: #2a1a40 !important; color: #c3a8e8 !important; }
+        .metric-card     { background: #1a2535 !important; border-color: #4a7aaa !important; color: #d0e8ff !important; }
+        .metric-card .label { color: #99b0cc !important; }
+        .metric-card .value { color: #d0e8ff !important; }
+        .data-note       { background: #1a2535 !important; color: #99b0cc !important; }
+    }
+    [data-theme="dark"] .badge-confirmed, .stApp[data-theme="dark"] .badge-confirmed { background: #1a3d24 !important; color: #7dcea0 !important; }
+    [data-theme="dark"] .badge-est,       .stApp[data-theme="dark"] .badge-est       { background: #3d3010 !important; color: #f0c060 !important; }
+    [data-theme="dark"] .badge-seed,      .stApp[data-theme="dark"] .badge-seed      { background: #2a1a40 !important; color: #c3a8e8 !important; }
+    [data-theme="dark"] .metric-card,     .stApp[data-theme="dark"] .metric-card     { background: #1a2535 !important; border-color: #4a7aaa !important; color: #d0e8ff !important; }
+    [data-theme="dark"] .metric-card .label, .stApp[data-theme="dark"] .metric-card .label { color: #99b0cc !important; }
+    [data-theme="dark"] .metric-card .value, .stApp[data-theme="dark"] .metric-card .value { color: #d0e8ff !important; }
+    [data-theme="dark"] .data-note,       .stApp[data-theme="dark"] .data-note       { background: #1a2535 !important; color: #99b0cc !important; }
+
 </style>
 """, unsafe_allow_html=True)
 
