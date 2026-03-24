@@ -112,6 +112,17 @@ html, body, [class*="css"] { font-family: 'IBM Plex Sans', sans-serif; }
 </style>
 """, unsafe_allow_html=True)
 
+# -- Data coverage notice ---------------------------------------------------
+st.info(
+    "**Data coverage:** Currently showing seed data for ~15 MPs and 10 bills "
+    "from the 13th Parliament. Full coverage is in progress via Mzalendo and "
+    "IEBC open data. Do not cite for definitive accountability claims until "
+    "complete coverage is confirmed. "
+    "[Contribute data](https://github.com/gabrielmahia/civic-decoder/issues/new)",
+    icon="\U0001f4ca"
+)
+# ---------------------------------------------------------------------------
+
 # ── Data loading ──────────────────────────────────────────────────────────────
 DATA = Path(__file__).parent / "data"
 
