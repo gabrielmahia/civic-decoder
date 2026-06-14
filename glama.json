@@ -1,0 +1,29 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/1.0.0/server.json",
+  "name": "civic-decoder",
+  "version": "0.1.0",
+  "description": "CivicDecoder \u2014 translates Kenya government documents into plain language. Bills, regulations, court orders, and policy documents in English and Swahili.",
+  "license": "MIT",
+  "homepage": "https://gabrielmahia.github.io",
+  "author": {
+    "name": "Gabriel Mahia",
+    "email": "contact@aikungfu.dev",
+    "url": "https://gabrielmahia.github.io"
+  },
+  "keywords": [
+    "kenya",
+    "civic",
+    "documents",
+    "plain-language",
+    "swahili",
+    "government",
+    "africa"
+  ],
+  "categories": [
+    "Government Data",
+    "Language Translation"
+  ],
+  "links": {
+    "github": "https://github.com/gabrielmahia/civic-decoder"
+  }
+}
