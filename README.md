@@ -20,7 +20,7 @@ bill tracking for the 13th Parliament (2022–2027).
 
 ## Data sources
 
-All data is public domain from official government sources:
+Data is attributed to the official government sources below. **It has not been independently verified** (see `data/DATA_STATUS.md`):
 - [parliament.go.ke](https://parliament.go.ke) — MP records, Hansard, bills
 - [NG-CDF Annual Reports](https://ngcdf.go.ke/annual-reports/) — fund utilisation
 - [Kenya Gazette](https://kenyagazette.go.ke) — enacted legislation
