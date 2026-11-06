@@ -22,8 +22,8 @@ bill tracking for the 13th Parliament (2022–2027).
 
 Data is attributed to the official government sources below. **It has not been independently verified** (see `data/DATA_STATUS.md`):
 - [parliament.go.ke](https://parliament.go.ke) — MP records, Hansard, bills
-- [NG-CDF Annual Reports](https://ngcdf.go.ke/annual-reports/) — fund utilisation
-- [Kenya Gazette](https://kenyagazette.go.ke) — enacted legislation
+- [NG-CDF](https://ngcdf.go.ke) — fund utilisation reports
+- [Kenya Gazette (Kenya Law)](https://new.kenyalaw.org/gazettes/) — enacted legislation
 
 Seed dataset: 15 MPs, 10 bills, 14 CDF records. Community contributions expand coverage.
 
