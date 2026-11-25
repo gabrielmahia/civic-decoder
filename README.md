@@ -29,7 +29,7 @@ Seed dataset: 15 MPs, 10 bills, 14 CDF records. Community contributions expand c
 
 ## IP & Collaboration
 
-© 2026 Gabriel Mahia · CC BY-NC-ND 4.0 · Non-commercial, no derivatives.
+© 2026 Gabriel Mahia · Apache-2.0 · Free to use, modify and redistribute with attribution; keep the LICENSE and any NOTICE.
 Collaboration via Issues only. See [IP_POLICY.md](docs/IP_POLICY.md).
 
 ## Security

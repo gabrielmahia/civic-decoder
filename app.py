@@ -461,7 +461,7 @@ unverified personal data about private individuals.
 st.divider()
 st.caption(
     "Macho ya Wananchi · Civic Decoder Kenya · Data: parliament.go.ke, NG-CDF Annual Reports, Kenya Gazette · "
-    "CC BY-NC-ND 4.0 · contact@aikungfu.dev · "
+    "Apache-2.0 · contact@aikungfu.dev · "
     "Not affiliated with Parliament of Kenya or NG-CDF Board"
 )
 
